@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naupada Medical | Trusted Pharmacy & Product Finder in Naupada, Thane</title>
+    <meta name="description" content="Naupada Medical is a trusted local pharmacy in Naupada, Thane West. Search medicines, healthcare essentials, OTC drugs, personal & baby care products. Call or WhatsApp us today!">
+    <meta name="keywords" content="Naupada Medical, Pharmacy in Naupada, Medical Store Thane, Medicines Naupada, Chemist Gokhale Road Thane">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Naupada Medical - Local Pharmacy & Product Availability Checker">
+    <meta property="og:description" content="Providing authentic medicines, personal care, and healthcare products in Naupada, Thane. Check product availability via WhatsApp or Call.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts & Lucide Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Structured Data (Schema.org Pharmacy) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Pharmacy",
+      "name": "Naupada Medical",
+      "image": "https://images.unsplash.com/photo-1586015555751-63bb77f4322a?auto=format&fit=crop&q=80&w=800",
+      "telephone": "+919820436779",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Laxmi Narayan Mandir Building, Gokhale Road, Sane Guruji Path, Shivaji Nagar, Naupada",
+        "addressLocality": "Thane West, Thane",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400602",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 19.1866,
+        "longitude": 72.9754
+      },
+      "url": "https://naupadamedical.com"
+    }
+    </script>
+
+    <style>
+        /* CSS RESET & VARIABLES */
+        :root {
+            --primary: #059669; /* Emerald 600 */
+            --primary-dark: #047857; /* Emerald 700 */
+            --primary-light: #ecfdf5; /* Emerald 50 */
+            --secondary: #2563eb; /* Blue 600 */
+            --secondary-light: #eff6ff; /* Blue 50 */
+            --text-main: #0f172a; /* Slate 900 */
+            --text-muted: #475569; /* Slate 600 */
+            --bg-main: #ffffff;
+            --bg-alt: #f8fafc; /* Slate 50 */
+            --border: #e2e8f0; /* Slate 200 */
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 20px;
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            --transition: all 0.25s ease-in-out;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: var(--text-main);
+            background-color: var(--bg-main);
+            line-height: 1.6;
+        }
+
+        body {
+            overflow-x: hidden;
+            padding-bottom: 70px; /* Space for mobile sticky CTA */
+        }
+
+        @media (min-width: 768px) {
+            body { padding-bottom: 0; }
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul { list-style: none; }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* LAYOUT CONTAINERS */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.25rem;
+        }
+
+        .section-padding {
+            padding: 3.5rem 0;
+        }
+
+        @media (min-width: 768px) {
+            .section-padding { padding: 5rem 0; }
+        }
+
+        /* BUTTONS & BADGES */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.8rem 1.4rem;
+            font-weight: 600;
+            font-size: 0.925rem;
+            border-radius: var(--radius-md);
+            transition: var(--transition);
+            cursor: pointer;
+            border: 1px solid transparent;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: white;
+        }
+        .btn-whatsapp:hover {
+            background-color: #20ba5a;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn-outline {
+            background-color: white;
+            border-color: var(--border);
+            color: var(--text-main);
+        }
+        .btn-outline:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+            background-color: var(--primary-light);
+        }
+
+        .btn-sm {
+            padding: 0.55rem 1rem;
+            font-size: 0.85rem;
+            border-radius: var(--radius-sm);
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.35rem 0.85rem;
+            background-color: var(--primary-light);
+            color: var(--primary-dark);
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border: 1px solid rgba(5, 150, 105, 0.2);
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 650px;
+            margin: 0 auto 2.5rem auto;
+        }
+        .section-header h2 {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-top: 0.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            position: sticky;
+            top: 0;
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid var(--border);
+            z-index: 1000;
+            height: 70px;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: var(--text-main);
+            letter-spacing: -0.02em;
+        }
+
+        .brand-logo .logo-icon {
+            width: 38px;
+            height: 38px;
+            background-color: var(--primary-light);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+        }
+
+        .nav-links {
+            display: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .mobile-menu-btn {
+            display: flex;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--text-main);
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .nav-links { display: flex; }
+            .mobile-menu-btn { display: none; }
+        }
+
+        .mobile-menu {
+            position: fixed;
+            top: 70px;
+            left: 0;
+            width: 100%;
+            background-color: white;
+            border-bottom: 1px solid var(--border);
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-150%);
+            transition: var(--transition);
+            z-index: 999;
+        }
+
+        .mobile-menu.active {
+            transform: translateY(0);
+        }
+
+        /* HERO SECTION */
+        .hero {
+            padding: 2.5rem 0 3.5rem 0;
+            background: linear-gradient(180deg, var(--bg-main) 0%, var(--bg-alt) 100%);
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2.5rem;
+            align-items: center;
+        }
+
+        @media (min-width: 992px) {
+            .hero-grid {
+                grid-template-columns: 1.1fr 0.9fr;
+                gap: 4rem;
+            }
+            .hero { padding: 4rem 0; }
+        }
+
+        .hero-content h1 {
+            font-size: 2.25rem;
+            font-weight: 800;
+            line-height: 1.2;
+            letter-spacing: -0.03em;
+            margin: 1rem 0;
+        }
+
+        @media (min-width: 768px) {
+            .hero-content h1 { font-size: 3.25rem; }
+        }
+
+        .hero-content p {
+            font-size: 1.05rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        @media (min-width: 480px) {
+            .hero-actions {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+        }
+
+        .hero-image-wrapper {
+            position: relative;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+        }
+
+        @media (min-width: 768px) {
+            .hero-image { height: 420px; }
+        }
+
+        /* SEARCH SECTION & PRODUCT FINDER */
+        .search-section {
+            background-color: #ffffff;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .search-box-card {
+            background-color: white;
+            border: 2px solid var(--primary);
+            border-radius: var(--radius-lg);
+            padding: 0.6rem 0.8rem 0.6rem 1.2rem;
+            box-shadow: 0 10px 25px -5px rgba(5, 150, 105, 0.15);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .search-box-card:focus-within {
+            box-shadow: 0 12px 30px -5px rgba(5, 150, 105, 0.25);
+        }
+
+        .search-input {
+            flex-grow: 1;
+            border: none;
+            outline: none;
+            font-size: 1rem;
+            font-family: inherit;
+            color: var(--text-main);
+            background: transparent;
+        }
+
+        .search-input::placeholder {
+            color: #94a3b8;
+        }
+
+        .icon-btn {
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            cursor: pointer;
+            padding: 0.4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: var(--transition);
+        }
+
+        .icon-btn:hover {
+            background-color: var(--bg-alt);
+            color: var(--primary);
+        }
+
+        .clear-btn {
+            display: none;
+        }
+
+        /* POPULAR CATEGORIES CHIPS */
+        .categories-scroll {
+            display: flex;
+            gap: 0.6rem;
+            overflow-x: auto;
+            padding: 1.25rem 0 0.5rem 0;
+            scrollbar-width: none;
+        }
+        .categories-scroll::-webkit-scrollbar { display: none; }
+
+        .cat-chip {
+            white-space: nowrap;
+            background-color: var(--bg-alt);
+            border: 1px solid var(--border);
+            padding: 0.45rem 1rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .cat-chip:hover, .cat-chip.active {
+            background-color: var(--primary-light);
+            border-color: var(--primary);
+            color: var(--primary-dark);
+        }
+
+        /* FILTER & SORT CONTROLS */
+        .controls-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .result-count {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .sort-select {
+            padding: 0.4rem 0.8rem;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border);
+            font-family: inherit;
+            font-size: 0.85rem;
+            color: var(--text-main);
+            outline: none;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        /* SEARCH RESULTS GRID */
+        .products-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.25rem;
+            margin-top: 1.5rem;
+        }
+
+        @media (min-width: 640px) {
+            .products-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (min-width: 1024px) {
+            .products-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+
+        .product-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            padding: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .product-card:hover {
+            border-color: var(--primary);
+            box-shadow: var(--shadow-md);
+            transform: translateY(-2px);
+        }
+
+        .demo-tag {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            background-color: var(--secondary-light);
+            color: var(--secondary);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+        }
+
+        .product-category {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.25rem;
+        }
+
+        .product-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 0.5rem;
+        }
+
+        .product-desc {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            margin-bottom: 1.25rem;
+            flex-grow: 1;
+        }
+
+        .product-actions {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0.5rem;
+        }
+
+        /* NO RESULTS STATE */
+        .no-results {
+            text-align: center;
+            padding: 3rem 1rem;
+            background-color: var(--bg-alt);
+            border-radius: var(--radius-md);
+            border: 1px dashed var(--border);
+            display: none;
+        }
+        .no-results i {
+            color: var(--text-muted);
+            margin-bottom: 0.75rem;
+        }
+
+        /* SERVICES SECTION */
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        @media (min-width: 640px) {
+            .services-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (min-width: 1024px) {
+            .services-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+
+        .service-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            padding: 1.75rem;
+            transition: var(--transition);
+        }
+
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+            border-color: rgba(5, 150, 105, 0.3);
+        }
+
+        .service-icon {
+            width: 48px;
+            height: 48px;
+            background-color: var(--primary-light);
+            color: var(--primary);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.25rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .service-card p {
+            color: var(--text-muted);
+            font-size: 0.925rem;
+        }
+
+        /* QUICK ACTION BAR */
+        .quick-actions-bar {
+            background-color: var(--primary-light);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            padding: 2.5rem 0;
+        }
+
+        .quick-actions-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+
+        @media (min-width: 768px) {
+            .quick-actions-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .quick-action-card {
+            background-color: white;
+            padding: 1.25rem 1.5rem;
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border);
+            transition: var(--transition);
+        }
+
+        .quick-action-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .quick-action-card .icon-wrap {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .quick-action-card.call .icon-wrap { background-color: var(--primary-light); color: var(--primary); }
+        .quick-action-card.whatsapp .icon-wrap { background-color: #e6f9ed; color: #25D366; }
+        .quick-action-card.map .icon-wrap { background-color: var(--secondary-light); color: var(--secondary); }
+
+        .quick-action-card .info { flex-grow: 1; }
+        .quick-action-card .info span { font-size: 0.8rem; color: var(--text-muted); display: block; }
+        .quick-action-card .info strong { font-size: 1rem; color: var(--text-main); }
+
+        /* ABOUT & TRUST */
+        .about-trust {
+            background-color: var(--bg-alt);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        @media (min-width: 992px) {
+            .about-grid { grid-template-columns: 1fr 1fr; }
+        }
+
+        .about-text h2 {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+
+        .about-text p {
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+        }
+
+        .trust-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .trust-item i {
+            color: var(--primary);
+            width: 20px;
+            height: 20px;
+        }
+
+        /* CONTACT SECTION */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        @media (min-width: 992px) {
+            .contact-grid { grid-template-columns: 1fr 1fr; }
+        }
+
+        .contact-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            padding: 2rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .contact-card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-detail-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .contact-detail-item i {
+            color: var(--primary);
+            margin-top: 0.25rem;
+            flex-shrink: 0;
+        }
+
+        .contact-detail-item div h4 {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .contact-detail-item div p {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        .map-container {
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            border: 1px solid var(--border);
+            height: 100%;
+            min-height: 320px;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: var(--text-main);
+            color: white;
+            padding: 3rem 0 1.5rem 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            .footer-grid { grid-template-columns: 2fr 1fr; }
+        }
+
+        .footer-brand h3 {
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            color: white;
+        }
+
+        .footer-brand p {
+            color: #94a3b8;
+            font-size: 0.9rem;
+            max-width: 400px;
+        }
+
+        .footer-links h4 {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .footer-links ul {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .footer-links a {
+            color: #94a3b8;
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover { color: white; }
+
+        .footer-bottom {
+            border-top: 1px solid #334155;
+            padding-top: 1.5rem;
+            text-align: center;
+            color: #94a3b8;
+            font-size: 0.85rem;
+        }
+
+        /* FLOATING WHATSAPP BUTTON */
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background-color: #25D366;
+            color: white;
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+            z-index: 990;
+            transition: var(--transition);
+        }
+
+        .floating-whatsapp:hover {
+            transform: scale(1.08);
+        }
+
+        /* MOBILE BOTTOM STICKY BAR */
+        .mobile-bottom-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: white;
+            border-top: 1px solid var(--border);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 0.5rem 0.75rem;
+            gap: 0.5rem;
+            z-index: 1000;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
+        }
+
+        @media (min-width: 768px) {
+            .mobile-bottom-bar { display: none; }
+        }
+
+        .mobile-bottom-bar .btn {
+            padding: 0.65rem;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="brand-logo">
+                <div class="logo-icon">
+                    <i data-lucide="plus-square"></i>
+                </div>
+                <span>Naupada Medical</span>
+            </a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#search-section">Find Medicines</a>
+                <a href="#about">About Us</a>
+                <a href="#services">Categories</a>
+                <a href="#contact">Contact</a>
+                <a href="tel:09820436779" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.875rem;">
+                    <i data-lucide="phone"></i> Call Now
+                </a>
+            </div>
+            <button class="mobile-menu-btn" id="menuToggle" aria-label="Toggle Menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- MOBILE MENU DROPDOWN -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home" onclick="toggleMenu()">Home</a>
+        <a href="#search-section" onclick="toggleMenu()">Find Medicines</a>
+        <a href="#about" onclick="toggleMenu()">About Us</a>
+        <a href="#services" onclick="toggleMenu()">Categories</a>
+        <a href="#contact" onclick="toggleMenu()">Contact</a>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="badge">
+                        <i data-lucide="shield-check"></i> Trusted Local Pharmacy
+                    </div>
+                    <h1>Your Trusted Local Pharmacy in Naupada, Thane</h1>
+                    <p>Providing genuine medicines, healthcare essentials, OTC products, and personal care items with trustworthy service for you and your family.</p>
+                    
+                    <div class="hero-actions">
+                        <a href="tel:09820436779" class="btn btn-primary">
+                            <i data-lucide="phone"></i> Call Store
+                        </a>
+                        <a href="https://wa.me/919820436779?text=Hello%20Naupada%20Medical,%20I%20would%20like%20to%20enquire%20about%20a%20medicine/product." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+                            <i data-lucide="message-circle"></i> WhatsApp Us
+                        </a>
+                        <a href="https://maps.google.com/?q=Laxmi+Narayan+Mandir+Building,+Gokhale+Road,+Sane+Guruji+Path,+Shivaji+Nagar,+Naupada,+Thane+West,+Thane,+Maharashtra+400602" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                            <i data-lucide="map-pin"></i> Get Directions
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1586015555751-63bb77f4322a?auto=format&fit=crop&q=80&w=800" alt="Naupada Medical Pharmacy Store" class="hero-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEARCH & PRODUCT FINDER SECTION -->
+    <section id="search-section" class="search-section section-padding">
+        <div class="container">
+            <div class="section-header" style="margin-bottom: 1.5rem;">
+                <div class="badge"><i data-lucide="search"></i> Product Availability Checker</div>
+                <h2>Search Medicines & Healthcare Products</h2>
+                <p>Search for demo medicines and products below to check availability directly with Naupada Medical on WhatsApp or Call.</p>
+            </div>
+
+            <!-- SEARCH BAR CARD -->
+            <div style="max-width: 750px; margin: 0 auto;">
+                <div class="search-box-card">
+                    <i data-lucide="search" style="color: var(--primary);"></i>
+                    <input type="text" id="searchInput" class="search-input" placeholder="Search cough, pain, baby, vitamin, diabetes..." aria-label="Search medicines">
+                    <button class="icon-btn clear-btn" id="clearBtn" title="Clear Search">
+                        <i data-lucide="x"></i>
+                    </button>
+                    <button class="icon-btn" id="voiceBtn" title="Voice Search Demo">
+                        <i data-lucide="mic"></i>
+                    </button>
+                    <button class="btn btn-primary btn-sm" id="searchSubmitBtn">
+                        Search
+                    </button>
+                </div>
+
+                <!-- POPULAR CATEGORY CHIPS -->
+                <div class="categories-scroll" id="categoryChips">
+                    <button class="cat-chip active" data-category="All">All Categories</button>
+                    <button class="cat-chip" data-category="Pain Relief"><i data-lucide="activity"></i> Pain Relief</button>
+                    <button class="cat-chip" data-category="Cold & Cough"><i data-lucide="thermometer"></i> Cold & Cough</button>
+                    <button class="cat-chip" data-category="Vitamins"><i data-lucide="shield"></i> Vitamins</button>
+                    <button class="cat-chip" data-category="First Aid"><i data-lucide="cross"></i> First Aid</button>
+                    <button class="cat-chip" data-category="Personal Care"><i data-lucide="sparkles"></i> Personal Care</button>
+                    <button class="cat-chip" data-category="Baby Care"><i data-lucide="heart"></i> Baby Care</button>
+                    <button class="cat-chip" data-category="Diabetes Care"><i data-lucide="droplet"></i> Diabetes Care</button>
+                </div>
+
+                <!-- CONTROLS & RESULT COUNT -->
+                <div class="controls-row">
+                    <span class="result-count" id="resultCount">Showing demo items</span>
+                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        <label for="sortSelect" style="font-size: 0.85rem; color: var(--text-muted); font-weight: 500;">Sort By:</label>
+                        <select id="sortSelect" class="sort-select">
+                            <option value="relevance">Relevance</option>
+                            <option value="name-asc">Name (A-Z)</option>
+                            <option value="name-desc">Name (Z-A)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- PRODUCT CARDS GRID -->
+                <div class="products-grid" id="productsGrid">
+                    <!-- Dynamic Product Cards injected by JS -->
+                </div>
+
+                <!-- NO RESULTS CARD -->
+                <div class="no-results" id="noResults">
+                    <i data-lucide="alert-circle" style="width: 40px; height: 40px;"></i>
+                    <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem;">No matching demo products found</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">We couldn't find an exact match in our online preview list. Contact us directly to enquire about availability.</p>
+                    <div style="display: flex; justify-content: center; gap: 0.5rem; flex-wrap: wrap;">
+                        <button class="btn btn-outline btn-sm" id="resetSearchBtn">Clear Search</button>
+                        <a href="https://wa.me/919820436779?text=Hello%20Naupada%20Medical,%20I%20would%20like%20to%20enquire%20about%20a%20medicine/product." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm">
+                            <i data-lucide="message-circle"></i> Ask on WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 1.25rem;">
+                    <p style="font-size: 0.78rem; color: var(--text-muted);">
+                        * Disclaimer: Products listed above are sample item previews for preview purposes. Stock availability must be verified via Call or WhatsApp.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUICK ACTIONS BAR -->
+    <section class="quick-actions-bar">
+        <div class="container">
+            <div class="quick-actions-grid">
+                <a href="tel:09820436779" class="quick-action-card call">
+                    <div class="icon-wrap">
+                        <i data-lucide="phone-call"></i>
+                    </div>
+                    <div class="info">
+                        <span>Direct Phone Call</span>
+                        <strong>098204 36779</strong>
+                    </div>
+                </a>
+
+                <a href="https://wa.me/919820436779?text=Hello%20Naupada%20Medical,%20I%20would%20like%20to%20enquire%20about%20a%20medicine/product." target="_blank" rel="noopener noreferrer" class="quick-action-card whatsapp">
+                    <div class="icon-wrap">
+                        <i data-lucide="message-square"></i>
+                    </div>
+                    <div class="info">
+                        <span>WhatsApp Availability</span>
+                        <strong>Send Inquiry</strong>
+                    </div>
+                </a>
+
+                <a href="https://maps.google.com/?q=Laxmi+Narayan+Mandir+Building,+Gokhale+Road,+Sane+Guruji+Path,+Shivaji+Nagar,+Naupada,+Thane+West,+Thane,+Maharashtra+400602" target="_blank" rel="noopener noreferrer" class="quick-action-card map">
+                    <div class="icon-wrap">
+                        <i data-lucide="navigation"></i>
+                    </div>
+                    <div class="info">
+                        <span>Visit Store in Thane</span>
+                        <strong>Get Directions</strong>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES CATEGORIES SECTION -->
+    <section id="services" class="services section-padding">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge">Store Offerings</div>
+                <h2>Healthcare Categories</h2>
+                <p>Explore our main categories stocked at Naupada Medical.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i data-lucide="file-text"></i></div>
+                    <h3>Prescription Medicines</h3>
+                    <p>Authentic healthcare medicines provided carefully against valid doctor prescriptions.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon"><i data-lucide="pill"></i></div>
+                    <h3>OTC Medicines</h3>
+                    <p>Everyday over-the-counter essentials for pain relief, cold, cough, and digestive health.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon"><i data-lucide="activity"></i></div>
+                    <h3>Healthcare Products</h3>
+                    <p>First aid supplies, health monitors, thermometers, bandages, and daily medical accessories.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon"><i data-lucide="sparkles"></i></div>
+                    <h3>Personal Care</h3>
+                    <p>Skincare, hygiene essentials, oral care, and hair care products from trusted brands.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon"><i data-lucide="baby"></i></div>
+                    <h3>Baby Care</h3>
+                    <p>Gentle baby care items including baby food, diapers, wipes, and skincare essentials.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon"><i data-lucide="smile"></i></div>
+                    <h3>Health & Wellness</h3>
+                    <p>Multivitamins, dietary supplements, immunity boosters, and health drinks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT & TRUST SECTION -->
+    <section id="about" class="about-trust section-padding">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <div class="badge" style="margin-bottom: 0.75rem;">About Naupada Medical</div>
+                    <h2>Serving Naupada Community with Care</h2>
+                    <p>Naupada Medical is a trusted local pharmacy conveniently located at Gokhale Road, Naupada, Thane West. We are committed to serving our local community with easy access to medicines and essential healthcare supplies.</p>
+                    <p>Our focus is on customer-centric service, transparent communication, and maintaining genuine inventory to support the health and well-being of families across Naupada and surrounding Thane areas.</p>
+                </div>
+
+                <div>
+                    <div class="contact-card">
+                        <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">Why Customers Trust Us</h3>
+                        <div class="trust-list">
+                            <div class="trust-item">
+                                <i data-lucide="check-circle-2"></i>
+                                <span>Local Pharmacy in Naupada</span>
+                            </div>
+                            <div class="trust-item">
+                                <i data-lucide="check-circle-2"></i>
+                                <span>Convenient & Accessible Location</span>
+                            </div>
+                            <div class="trust-item">
+                                <i data-lucide="check-circle-2"></i>
+                                <span>Easy Phone & WhatsApp Enquiries</span>
+                            </div>
+                            <div class="trust-item">
+                                <i data-lucide="check-circle-2"></i>
+                                <span>Genuine Healthcare Products</span>
+                            </div>
+                            <div class="trust-item">
+                                <i data-lucide="check-circle-2"></i>
+                                <span>Customer-focused Service</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge">Locate Us</div>
+                <h2>Contact Naupada Medical</h2>
+                <p>Have a query regarding product availability or store location? Reach out to us directly.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3>Store Information</h3>
+                    
+                    <div class="contact-detail-item">
+                        <i data-lucide="map-pin"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Laxmi Narayan Mandir Building, Gokhale Road, Sane Guruji Path, Shivaji Nagar, Naupada, Thane West, Thane, Maharashtra 400602</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail-item">
+                        <i data-lucide="phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:09820436779">098204 36779</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail-item">
+                        <i data-lucide="message-circle"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p><a href="https://wa.me/919820436779?text=Hello%20Naupada%20Medical,%20I%20would%20like%20to%20enquire%20about%20a%20medicine/product." target="_blank" rel="noopener noreferrer">+91 98204 36779</a></p>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                        <a href="tel:09820436779" class="btn btn-primary" style="flex: 1;">
+                            <i data-lucide="phone"></i> Call Store
+                        </a>
+                        <a href="https://maps.google.com/?q=Laxmi+Narayan+Mandir+Building,+Gokhale+Road,+Sane+Guruji+Path,+Shivaji+Nagar,+Naupada,+Thane+West,+Thane,+Maharashtra+400602" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="flex: 1;">
+                            <i data-lucide="navigation"></i> Directions
+                        </a>
+                    </div>
+                </div>
+
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.1884391307137!2d72.9732113!3d19.1866388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b920fe1e389b%3A0x8e228bf58c0c4515!2sGokhale%20Rd%2C%20Naupada%2C%20Thane%20West%2C%20Thane%2C%20Maharashtra%20400602!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Naupada Medical Map Location">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Naupada Medical</h3>
+                    <p>Your local pharmacy in Naupada, Thane. Delivering authentic healthcare products and personal care supplies with customer satisfaction in mind.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#search-section">Product Search</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Categories</a></li>
+                        <li><a href="#contact">Contact & Map</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Naupada Medical. All rights reserved. | Naupada, Thane West, Maharashtra</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON (DESKTOP) -->
+    <a href="https://wa.me/919820436779?text=Hello%20Naupada%20Medical,%20I%20would%20like%20to%20enquire%20about%20a%20medicine/product." target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+        <i data-lucide="message-circle" style="width: 28px; height: 28px;"></i>
+    </a>
+
+    <!-- MOBILE STICKY BOTTOM ACTION BAR -->
+    <div class="mobile-bottom-bar">
+        <a href="tel:09820436779" class="btn btn-primary">
+            <i data-lucide="phone"></i> Call Store
+        </a>
+        <a href="https://wa.me/919820436779?text=Hello%20Naupada%20Medical,%20I%20would%20like%20to%20enquire%20about%20a%20medicine/product." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+            <i data-lucide="message-circle"></i> WhatsApp
+        </a>
+    </div>
+
+    <!-- JAVASCRIPT: LOGIC & SEARCH ENGINE -->
+    <script>
+        // CONFIGURATION: Easily update Pharmacy WhatsApp Number
+        const PHARMACY_WHATSAPP_NUMBER = "919820436779";
+
+        // DEMO PRODUCTS DATABASE
+        const demoProducts = [
+            { id: 1, name: "Paracetamol 500mg Tablets", category: "Pain Relief", desc: "Common OTC relief for fever, minor headaches, and bodily aches." },
+            { id: 2, name: "Ibuprofen 400mg", category: "Pain Relief", desc: "Anti-inflammatory tablets for joint pain and muscular aches." },
+            { id: 3, name: "Pain Relief Spray 100g", category: "Pain Relief", desc: "Fast-acting topical spray for backaches and sports strains." },
+            { id: 4, name: "Cough Syrup 100ml", category: "Cold & Cough", desc: "Relief syrup for dry or chesty cough and sore throat symptoms." },
+            { id: 5, name: "Vapor Inhaler Stick", category: "Cold & Cough", desc: "Compact inhaler for quick relief from nasal congestion." },
+            { id: 6, name: "Sore Throat Lozenges (10s)", category: "Cold & Cough", desc: "Soothing lozenges to relieve throat irritation and pain." },
+            { id: 7, name: "Vitamin C 500mg Chewable", category: "Vitamins", desc: "Immunity support tablets enriched with Zinc and Vitamin C." },
+            { id: 8, name: "Multivitamin Daily Tablets", category: "Vitamins", desc: "Daily nutritional supplement supporting active health & stamina." },
+            { id: 9, name: "Vitamin D3 60K Capsules", category: "Vitamins", desc: "Bone health and calcium absorption support capsules." },
+            { id: 10, name: "Antiseptic Liquid Solution 250ml", category: "First Aid", desc: "Essential topical liquid for wound cleaning and disinfection." },
+            { id: 11, name: "Waterproof Bandages (Box of 20)", category: "First Aid", desc: "Sterile adhesive strips for minor cuts, grazes, and scuffs." },
+            { id: 12, name: "Cotton Roll 100g", category: "First Aid", desc: "Absorbent surgical grade cotton roll for medical dressings." },
+            { id: 13, name: "Moisturizing Body Lotion 200ml", category: "Personal Care", desc: "Nourishing daily skin moisturizer for smooth and soft skin." },
+            { id: 14, name: "Gentle Hand Wash Refill 500ml", category: "Personal Care", desc: "Antibacterial hand wash offering germ protection." },
+            { id: 15, name: "Gentle Baby Shampoo 200ml", category: "Baby Care", desc: "Tear-free, mild baby shampoo formula for daily bath care." },
+            { id: 16, name: "Baby Wipes 80 Sheets", category: "Baby Care", desc: "Soft, alcohol-free wet wipes formulated for sensitive baby skin." },
+            { id: 17, name: "Blood Glucose Test Strips (50s)", category: "Diabetes Care", desc: "Compatible test strips for quick home glucometer readings." },
+            { id: 18, name: "Digital Thermometer", category: "Healthcare Devices", desc: "Accurate and fast digital body temperature measurement tool." }
+        ];
+
+        // STATE VARIABLES
+        let currentSearchQuery = "";
+        let selectedCategory = "All";
+        let currentSort = "relevance";
+
+        // DOM ELEMENTS
+        const searchInput = document.getElementById('searchInput');
+        const clearBtn = document.getElementById('clearBtn');
+        const voiceBtn = document.getElementById('voiceBtn');
+        const productsGrid = document.getElementById('productsGrid');
+        const noResults = document.getElementById('noResults');
+        const resultCount = document.getElementById('resultCount');
+        const sortSelect = document.getElementById('sortSelect');
+        const categoryChips = document.getElementById('categoryChips');
+        const resetSearchBtn = document.getElementById('resetSearchBtn');
+
+        // INITIALIZE APP
+        document.addEventListener('DOMContentLoaded', () => {
+            renderProducts();
+            lucide.createIcons();
+            document.getElementById('year').textContent = new Date().getFullYear();
+        });
+
+        // RENDER FILTERED & SORTED PRODUCTS
+        function renderProducts() {
+            let filtered = demoProducts.filter(item => {
+                const matchesQuery = item.name.toLowerCase().includes(currentSearchQuery.toLowerCase()) || 
+                                     item.category.toLowerCase().includes(currentSearchQuery.toLowerCase()) ||
+                                     item.desc.toLowerCase().includes(currentSearchQuery.toLowerCase());
+                
+                const matchesCategory = selectedCategory === "All" || item.category === selectedCategory;
+
+                return matchesQuery && matchesCategory;
+            });
+
+            // SORT LOGIC
+            if (currentSort === "name-asc") {
+                filtered.sort((a, b) => a.name.localeCompare(b.name));
+            } else if (currentSort === "name-desc") {
+                filtered.sort((a, b) => b.name.localeCompare(a.name));
+            }
+
+            // UI UPDATES
+            productsGrid.innerHTML = "";
+
+            if (filtered.length === 0) {
+                productsGrid.style.display = "none";
+                noResults.style.display = "block";
+                resultCount.textContent = "0 products found";
+            } else {
+                productsGrid.style.display = "grid";
+                noResults.style.display = "none";
+                resultCount.textContent = `Showing ${filtered.length} demo product${filtered.length > 1 ? 's' : ''}`;
+
+                filtered.forEach(item => {
+                    const card = document.createElement('div');
+                    card.className = "product-card";
+                    
+                    const waMessage = encodeURIComponent(`Hello Naupada Medical, I would like to check the availability of ${item.name}.`);
+                    const waUrl = `https://wa.me/${PHARMACY_WHATSAPP_NUMBER}?text=${waMessage}`;
+
+                    card.innerHTML = `
+                        <span class="demo-tag">Demo Item</span>
+                        <div>
+                            <div class="product-category">${item.category}</div>
+                            <h3 class="product-title">${item.name}</h3>
+                            <p class="product-desc">${item.desc}</p>
+                        </div>
+                        <div class="product-actions">
+                            <a href="${waUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm">
+                                <i data-lucide="message-circle"></i> Ask on WhatsApp
+                            </a>
+                            <a href="${waUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                                Check Availability
+                            </a>
+                        </div>
+                    `;
+                    productsGrid.appendChild(card);
+                });
+
+                lucide.createIcons();
+            }
+        }
+
+        // EVENT LISTENERS: SEARCH INPUT
+        searchInput.addEventListener('input', (e) => {
+            currentSearchQuery = e.target.value.trim();
+            clearBtn.style.display = currentSearchQuery.length > 0 ? 'flex' : 'none';
+            renderProducts();
+        });
+
+        // KEYBOARD SUPPORT (ENTER / ESCAPE)
+        searchInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                clearSearch();
+            } else if (e.key === 'Enter') {
+                e.preventDefault();
+                searchInput.blur();
+            }
+        });
+
+        // CLEAR SEARCH BUTTON
+        clearBtn.addEventListener('click', clearSearch);
+        resetSearchBtn.addEventListener('click', clearSearch);
+
+        function clearSearch() {
+            searchInput.value = "";
+            currentSearchQuery = "";
+            clearBtn.style.display = 'none';
+            renderProducts();
+            searchInput.focus();
+        }
+
+        // CATEGORY CHIP SELECTION
+        categoryChips.addEventListener('click', (e) => {
+            const chip = e.target.closest('.cat-chip');
+            if (!chip) return;
+
+            document.querySelectorAll('.cat-chip').forEach(c => c.classList.remove('active'));
+            chip.classList.add('active');
+
+            selectedCategory = chip.dataset.category;
+            renderProducts();
+        });
+
+        // SORT SELECT CHANGED
+        sortSelect.addEventListener('change', (e) => {
+            currentSort = e.target.value;
+            renderProducts();
+        });
+
+        // VOICE SEARCH DEMO FEEDBACK
+        voiceBtn.addEventListener('click', () => {
+            if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
+                const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+                const recognition = new SpeechRecognition();
+                recognition.lang = 'en-US';
+                
+                voiceBtn.style.color = 'var(--primary)';
+                searchInput.placeholder = "Listening...";
+
+                recognition.onresult = (event) => {
+                    const transcript = event.results[0][0].transcript;
+                    searchInput.value = transcript;
+                    currentSearchQuery = transcript;
+                    clearBtn.style.display = 'flex';
+                    searchInput.placeholder = "Search medicines, healthcare products...";
+                    voiceBtn.style.color = 'var(--text-muted)';
+                    renderProducts();
+                };
+
+                recognition.onerror = () => {
+                    searchInput.placeholder = "Voice error. Try typing...";
+                    voiceBtn.style.color = 'var(--text-muted)';
+                };
+
+                recognition.start();
+            } else {
+                alert("Voice search speech recognition is not supported in this browser. Please type your query.");
+            }
+        });
+
+        // MOBILE NAVIGATION MENU TOGGLE
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        function toggleMenu() {
+            mobileMenu.classList.toggle('active');
+        }
+
+        menuToggle.addEventListener('click', toggleMenu);
+    </script>
+</body>
+</html>
